@@ -8,8 +8,12 @@ class TestController
   {
     // This is a test project
     $test = [];
+    $array=[];
     for ($i = 0; $i < 10; $i++) {
-      array_push($test, $i);
+      // This is a comment
+      if ($i%2==0){
+        array_push($test,$i);
+      }
     }
   }
   public function test(){
